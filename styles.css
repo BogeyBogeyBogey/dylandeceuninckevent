@@ -151,6 +151,7 @@ button {
 }
 
 .brand span {
+  line-height: 1.08;
   white-space: nowrap;
 }
 
@@ -342,6 +343,10 @@ button {
 .hero-title {
   max-width: 780px;
   font-size: 5.7rem;
+}
+
+.hero-title-lines .title-line {
+  display: block;
 }
 
 .display-heading {
@@ -623,8 +628,39 @@ button {
   height: 100%;
   min-height: 430px;
   object-fit: cover;
+  object-position: var(--focus-x, 50%) var(--focus-y, 50%);
   filter: saturate(1.08) contrast(1.04);
   transition: transform 700ms var(--ease);
+}
+
+.offer-sinterklaas {
+  --focus-x: 48%;
+  --focus-y: 16%;
+}
+
+.offer-paashaas {
+  --focus-x: 0%;
+  --focus-y: 44%;
+}
+
+.offer-stitch {
+  --focus-x: 50%;
+  --focus-y: 8%;
+}
+
+.offer-superheld {
+  --focus-x: 50%;
+  --focus-y: 48%;
+}
+
+.offer-chase {
+  --focus-x: 50%;
+  --focus-y: 16%;
+}
+
+.offer-halloween {
+  --focus-x: 86%;
+  --focus-y: 62%;
 }
 
 .offer-card:hover img {
